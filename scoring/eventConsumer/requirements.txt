@@ -2,3 +2,4 @@ numpy
 pandas
 sklearn
 confluent_kafka
+Flask
