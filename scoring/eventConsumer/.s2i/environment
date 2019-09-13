@@ -1,2 +1,2 @@
-APP_FILE=infrastructure.webappconfig.py
+APP_CONFIG=infrastructure/webappconfig.py
 APP_FILE=wsgi.py
