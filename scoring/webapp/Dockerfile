@@ -12,6 +12,4 @@ RUN  pip install --trusted-host pypi.python.org -r requirements.txt
 ENV PREDICT_WEB_PORT 8083
 EXPOSE ${PREDICT_WEB_PORT}
 
-CMD ["gunicorn", "-b", "0.0.0.0:" + ${PREDICT_WEB_PORT}, "wsgi"]
-
-
+CMD ["sh", "-c", "gunicorn -b 0.0.0.0:${PREDICT_WEB_PORT} wsgi"]
